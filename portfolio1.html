@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio1.css">
+    <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    
+<header>
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-down">Bebe Jims</div>
+        <ul class="nav-links">
+            <li data-aos="fade-down"><a href="#home">Home</a></li>
+            <li data-aos="fade-down" data-aos-delay="100"><a href="#shop">Shop</a></li>
+            <li data-aos="fade-down" data-aos-delay="200"><a href="#services">Service</a></li>
+            <li data-aos="fade-down" data-aos-delay="300"><a href="#skills">Skills</a></li>
+            <li data-aos="fade-down" data-aos-delay="400"><a href="#recent-projects">Projects</a></li>
+            <li data-aos="fade-down" data-aos-delay="500"><a href="#about">About</a></li>
+            <li data-aos="fade-down" data-aos-delay="600"><a href="#contact">Contact</a></li>
+            <li class="cart-icon" data-aos="zoom-in" data-aos-delay="700">
+                <span>🛒</span>
+            </li>
+            <li data-aos="fade-left" data-aos-delay="800"><a href="#login" class="login-btn">Log In</a></li>
+        </ul>
+        <div class="hamburger" data-aos="fade-down" data-aos-delay="100">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
+
+    <!-- Sections -->
+    <section id="home">
+    <div class="home-left" data-aos="zoom-in">
+        <h1>
+            Hello I'm <span class="highlight">Bebe Jims</span>
+        </h1>
+        <h2>
+            I am <span class="typewriter" id="typewriter"></span>
+        </h2>
+        <p>
+            Passionate about creating beautiful and functional websites. Let's collaborate to make your ideas come to life.
+        </p>
+        <div class="buttons">
+            <a href="cv.pdf" download class="btn btn-primary" data-aos="fade-down">Download CV</a>
+            <button class="btn btn-secondary" id="hire-btn" data-aos="fade-up">Hire Me</button>
+        </div>
+    </div>
+    <div class="home-right" data-aos="zoom-in">
+        <img src="img/main1.png" alt="My Image">
+    </div>
+</section>
+
+    <!-- Shop Section -->
+    <section id="shop">
+    <h2>Shop</h2>
+    <div class="card-container">
+        <!-- Product Card -->
+        <div class="card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <img src="img/main1.png" alt="Product Image">
+            <div class="card-content">
+                <h3>Product Name 1</h3>
+                <p class="price">₱299</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-buttons">
+                <button class="btn btn-buy" data-aos="fade-right">Buy Now</button>
+                <button class="btn btn-cart" data-aos="fade-left">Add to Cart</button>
+            </div>
+        </div>
+        
+        <!-- Duplicate for multiple products -->
+        <div class="card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <img src="img/main1.png" alt="Product Image">
+            <div class="card-content">
+                <h3>Product Name 2</h3>
+                <p class="price">₱399</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-buttons">
+                <button class="btn btn-buy" data-aos="fade-right">Buy Now</button>
+                <button class="btn btn-cart" data-aos="fade-left">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+        
+        <div class="card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <img src="img/main1.png" alt="Product Image">
+            <div class="card-content">
+                <h3>Product Name 1</h3>
+                <p class="price">₱299</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="card-buttons">
+                <button class="btn btn-buy" data-aos="fade-right">Buy Now</button>
+                <button class="btn btn-cart" data-aos="fade-left">Add to Cart</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Explore More Button -->
+    <div class="explore-more">
+        <a href="shop.html" class="btn btn-explore" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">Explore More</a>
+    </div>
+</section>
+
+    <!-- Service Section -->
+    <section id="services">
+  <h2>Services</h2>
+  <div class="services-container">
+    <!-- Web Development Card -->
+    <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="100">
+      <i class="fas fa-code"></i>
+      <h3>Web Development</h3>
+      <p>
+        Crafting responsive and functional websites tailored to your business needs.
+      </p>
+      <a href="#" class="learn-more" data-service="web-development">Learn more</a>
+    </div>
+    <!-- Graphic Design Card -->
+    <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delay="200">
+      <i class="fas fa-paint-brush"></i>
+      <h3>Graphic Design</h3>
+      <p>
+        Designing captivating visuals, logos, and promotional materials.
+      </p>
+      <a href="#" class="learn-more" data-service="graphic-design">Learn more</a>
+    </div>
+    <!-- Social Media Management Card -->
+    <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delay="200">
+      <i class="fas fa-share-alt"></i>
+      <h3>Social Media Management</h3>
+      <p>
+        Managing social platforms to increase engagement and brand visibility.
+      </p>
+      <a href="#" class="learn-more" data-service="social-media">Learn more</a>
+    </div>
+    <!-- Content Writing Card -->
+    <div class="service-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="100" data-aos-delay="200">
+      <i class="fas fa-pen"></i>
+      <h3>Content Writing</h3>
+      <p>
+        Crafting compelling and SEO-optimized content for your audience.
+      </p>
+      <a href="#" class="learn-more" data-service="content-writing">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="service-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-modals">&times;</span>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+    <!-- Skills Section -->  
+    <section id="skills-section">
+    <h2 class="skills-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-offset="200">Skills</h2>
+    <div class="skills-card">
+        <!-- CapCut Skill -->
+        <div class="skill-item" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <i class="fas fa-video skill-icon"></i>
+            <h3 class="skill-title">CapCut</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-percentage="95">
+                    <span class="progress-percentage">95%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- HTML Skill -->
+        <div class="skill-item" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <i class="fas fa-code skill-icon"></i>
+            <h3 class="skill-title">HTML</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-percentage="85">
+                    <span class="progress-percentage">85%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CSS Skill -->
+        <div class="skill-item" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <i class="fas fa-paint-brush skill-icon"></i>
+            <h3 class="skill-title">CSS</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-percentage="75">
+                    <span class="progress-percentage">75%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript Skill -->
+        <div class="skill-item" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <i class="fas fa-laptop-code skill-icon"></i>
+            <h3 class="skill-title">JavaScript</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-percentage="50">
+                    <span class="progress-percentage">50%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Python Skill -->
+        <div class="skill-item" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <i class="fa-brands fa-python skill-icon"></i>
+            <h3 class="skill-title">Python</h3>
+            <div class="progress-bar-container">
+                <div class="progress-bar" data-percentage="40">
+                    <span class="progress-percentage">40%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Recent Project Section -->
+    <section id="recent-projects">
+    <h2 class="section-title" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+        Recent Projects
+    </h2>
+    <div class="projects-container">
+        <!-- Project Cards -->
+        <div class="project-card" data-aos="zoom-in">
+            <img src="img/main1.png" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project1.html" class="view-project-btn">View Project</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+            <img src="img/main1.png" alt="Project 2" class="project-image">
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project2.html" class="view-project-btn">View Project</a>
+        </div>
+        <div class="project-card" data-aos="zoom-in">
+            <img src="img/main1.png" alt="Project 3" class="project-image">
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project3.html" class="view-project-btn">View Project</a>
+        </div>
+        <div class="project-card hidden" data-aos="zoom-in">
+            <img src="img/main1.png" alt="Project 4" class="project-image">
+            <h3 class="project-title">Project Four</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project4.html" class="view-project-btn">View Project</a>
+        </div>
+        <div class="project-card hidden" data-aos="zoom-in">
+            <img src="img/main1.png" alt="Project 5" class="project-image">
+            <h3 class="project-title">Project Five</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project5.html" class="view-project-btn">View Project</a>
+        </div>
+        <div class="project-card hidden" data-aos="zoom-in">
+            <img src="img/main1.png" alt="Project 6" class="project-image">
+            <h3 class="project-title">Project Six</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project6.html" class="view-project-btn">View Project</a>
+        </div>
+    </div>
+    <button id="view-more-btn" class="view-more-btn">View More</button>
+</section>
+
+<!-- Pop-Up Modal -->
+<div id="projects-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>All Projects</h2>
+        <div class="all-projects-container">
+            <!-- Example Modal Projects -->
+            <div class="project-cards" data-aos="zoom-in">
+            <img src="img/main2.png" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project1.html" class="view-project-btn">View Project</a>
+        </div>
+            <div class="project-cards" data-aos="zoom-in">
+            <img src="img/main2.png" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project1.html" class="view-project-btn">View Project</a>
+        </div>
+            <div class="project-cards" data-aos="zoom-in">
+            <img src="img/main2.png" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project1.html" class="view-project-btn">View Project</a>
+        </div>
+            <div class="project-cards" data-aos="zoom-in">
+            <img src="img/main2.png" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project1.html" class="view-project-btn">View Project</a>
+        </div>
+            <div class="project-cards" data-aos="zoom-in">
+            <img src="img/main2.png" alt="Project 1" class="project-image">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-description">A short description of the project.</p>
+            <a href="project1.html" class="view-project-btn">View Project</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+    <!-- About Section -->
+    <section id="about">
+    <h2 class="section-title" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="100">About Us</h2>
+    <div class="about-card" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="100">
+        <div class="about-image" data-aos="zoom-in" data-aos-anchor-placement="top-bottom" data-aos-offset="100">
+            <img src="img/main1.png" alt="About Image">
+        </div>
+        <div class="about-content" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-offset="100">
+            <h3 class="about-title">Our Mission</h3>
+            <p class="about-description">We aim to provide the best service, helping our users discover, create, and experience new things through innovation and technology.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+    <h2 class="section-title" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="200">Contact Us</h2>
+    <div class="contact-card">
+        <!-- Contact Form -->
+        <div class="contact-form" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-offset="200">
+            <h3>Get in Touch</h3>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="footer-container">
+        <!-- Quick Links Section -->
+        <div class="footer-column" data-aos="fade-right">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#recent-projects">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Contact Section -->
+        <div class="footer-column" data-aos="fade-right">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Location: City, Country</p>
+        </div>
+        <!-- Follow Us Section -->
+        <div class="footer-column" data-aos="fade-right">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom" data-aos="fade-up">
+        <p>&copy; 2024 Bebe Jims. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="portfolio1.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000, // Ang tagal ng animation
+        once: true, // Isang beses lang mag-a-animate habang nag-i-scroll
+    });
+</script>
+<!-- AOS JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</body>
+</html>
